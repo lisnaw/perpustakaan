@@ -68,3 +68,75 @@ input[type="submit"] {
     font-size: 1em;
     transition: background-color 0.3s ease;
 }
+
+input[type="submit"]:hover {
+    background-color: #1e90ff;
+}
+
+/* Daftar buku */
+.book-list,
+.search-results {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li,
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-list li:hover,
+.search-results li:hover {
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pesan kosong */
+.no-books,
+.no-results {
+    color: #95a5a6;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Pesan sukses */
+.success {
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .form-add-book input[type="text"],
+    .form-add-book input[type="number"],
+    .form-search input[type="text"] {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
