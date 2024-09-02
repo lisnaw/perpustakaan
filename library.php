@@ -48,7 +48,7 @@ class Library
             foreach ($this->books as $book) {
                 echo "<li>" . $book->displayBook() . "</li>"; // Menampilkan setiap buku dalam format daftar
             }
-            echo "</ul>"; // Menutup daftar buku
+            echo "</ul>"; // Untuk menutup daftar buku
         }
     }
 }
