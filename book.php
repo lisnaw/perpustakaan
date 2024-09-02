@@ -11,4 +11,23 @@ class Book
         $this->author = $author;
         $this->year = $year;
     }
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    public function getYear()
+    {
+        return $this->year;
+    }
+
+    public function displayBook()
+    {
+        return "{$this->title}, oleh {$this->author} ({$this->year})";
+    }
 }
