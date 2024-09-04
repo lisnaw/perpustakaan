@@ -1,5 +1,4 @@
 <?php
-// Database.php
 
 // Membuat kelas Database untuk mengelola koneksi ke database
 class Database {

@@ -1,5 +1,6 @@
 <?php
 include_once 'Library.php';
+include_once 'Database.php';
 
 // Inisialisasi perpustakaan
 $library = new Library();
